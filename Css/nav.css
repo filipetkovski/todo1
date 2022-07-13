@@ -77,6 +77,10 @@ nav button:hover {
 }
 
 @media  (max-width: 450px) {
+    nav button {
+        font-weight: bold;
+    }
+    
     nav button:hover {
         background-color: transparent;
         color: black;

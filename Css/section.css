@@ -1,5 +1,5 @@
 section {
-    margin-top: 61px;
+    margin-top: 71px;
     margin-right: 500px;
     margin-left: 60px;
     height: 88vh;
@@ -68,12 +68,10 @@ section {
 
 .nameSec {
     background-color: #f1f1f1;
-    position: sticky;
-    top: 61px;
     z-index: 50;
     font-size: 1.5em;
     color: #505050;
-    padding: 30px 0 20px 10px;
+    padding: 20px 10px;
     margin: 0;
 }
 
