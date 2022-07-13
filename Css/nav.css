@@ -75,3 +75,10 @@ nav button:hover {
 .nav-button2, .nav-button4, .nav-button1, .nav-button3  {
     padding-left: 22px;
 }
+
+@media  (max-width: 450px) {
+    nav button:hover {
+        background-color: transparent;
+        color: black;
+    }
+}
