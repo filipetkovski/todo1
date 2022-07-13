@@ -21,7 +21,7 @@ nav {
 }
 
 nav span {
-    opacity: 0;
+    display: none;
     margin-left: 10px;
     pointer-events: none;
 }
@@ -80,7 +80,7 @@ nav button:hover {
     nav button {
         font-weight: bold;
     }
-    
+
     nav button:hover {
         background-color: transparent;
         color: black;

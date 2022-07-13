@@ -296,11 +296,11 @@ function menuOpen() {
     ham1.style.display = "none";
     ham2.style.display = "unset";
 
-    navButton1.style.opacity = "1";
-    navButton2.style.opacity = "1";
-    navButton3.style.opacity = "1";
-    navButton4.style.opacity = "1";
-    navButton5.style.opacity = "1";
+    navButton1.style.display = "unset";
+    navButton2.style.display = "unset";
+    navButton3.style.display = "unset";
+    navButton4.style.display = "unset";
+    navButton5.style.display = "unset";
 
 }
 
@@ -320,10 +320,10 @@ function menuClose() {
     ham1.style.display = "unset";
     ham2.style.display = "none";
 
-    navButton1.style.opacity = "0";
-    navButton2.style.opacity = "0";
-    navButton3.style.opacity = "0";
-    navButton4.style.opacity = "0";
-    navButton5.style.opacity = "0";
+    navButton1.style.display = "none";
+    navButton2.style.display = "none";
+    navButton3.style.display = "none";
+    navButton4.style.display = "none";
+    navButton5.style.display = "none";
 
 }
