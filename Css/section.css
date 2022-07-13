@@ -6,7 +6,12 @@ section {
     position: relative;
 }
 
+#main1 {
+    margin-top: 61px;
+}
+
 #main2, #main3, #main4 {
+    margin-top: 61px;
     display: none;
 }
 
@@ -18,7 +23,7 @@ section {
     align-items: center;
     border-radius: 10px;
     position:  sticky;
-    top: 10px;
+    top: 81px;
     bottom: 10px;
     box-shadow: 2px 2px 10px black;
 }
@@ -64,13 +69,12 @@ section {
 .nameSec {
     background-color: #f1f1f1;
     position: sticky;
-    left: 0;
-    top: 71px;
-    right: 0;
+    top: 61px;
     z-index: 50;
     font-size: 1.5em;
     color: #505050;
-    padding: 20px 0 20px 10px;
+    padding: 30px 0 20px 10px;
+    margin: 0;
 }
 
 @media (max-width: 800px) {

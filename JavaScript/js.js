@@ -86,7 +86,6 @@ function addTasktoDay(text) {
     button.style.borderRadius = "10px";
     button.style.width = "20px";
     button.id = "butCas1";
-    newDiv.style.boxShadow = "1px 0px 5px black";
 
     divLeft.appendChild(button);
     divLeft.appendChild(newTask);
