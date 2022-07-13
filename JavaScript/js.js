@@ -25,7 +25,7 @@ function add(n) {
     } if (n === 2) {
         if(addInput2.value !== '') {
             const text = addInput2.value;
-            addTasktoPlanned(text);
+            addTasktoPlanned();
         } else {
             addInput2.style.borderBottom = "1px solid white";
         }
@@ -86,6 +86,7 @@ function addTasktoDay(text) {
     button.style.borderRadius = "10px";
     button.style.width = "20px";
     button.id = "butCas1";
+    newDiv.style.boxShadow = "1px 0px 5px black";
 
     divLeft.appendChild(button);
     divLeft.appendChild(newTask);
@@ -162,7 +163,7 @@ function addTasktoPlanned(text) {
     newDiv.appendChild(newTask);
     newDiv.appendChild(newTime);
     div.appendChild(newDiv);
-    
+
     addTasktoTaks(text);
 }
 //Tasks
