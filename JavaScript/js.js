@@ -159,6 +159,10 @@ function addTasktoPlanned(text) {
     newTask.innerText = text;
     newTask.style.fontSize = "1.1em"
 
+    newDiv.appendChild(newTask);
+    newDiv.appendChild(newTime);
+    div.appendChild(newDiv);
+    
     addTasktoTaks(text);
 }
 //Tasks
