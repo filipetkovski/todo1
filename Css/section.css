@@ -6,9 +6,8 @@ section {
     position: relative;
 }
 
-#main2 {
+#main2, #main3, #main4 {
     display: none;
-    background-color: firebrick;
 }
 
 .add {
@@ -52,13 +51,20 @@ section {
     font-size: 2em;
 }
 
-#addTasks {
+#addTasks, #addTasks1, #addTasks2, #addTasks3 {
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
 .addTask span {
     font-size: 1.2em;
+}
+
+.nameSec {
+    font-size: 1.5em;
+    color: #505050;
+    margin-left: 10px;
+    padding-top: 10px;
 }
 
 @media (max-width: 800px) {
