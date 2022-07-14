@@ -92,9 +92,8 @@
         font-size: 1.1em;
     }
     .taskBody__button {
-        border-radius: 5px;
-        width: 5px;
-        height: 10px;
+        width: 15px;
+        height: 15px;
         margin: 2px;
     }
 }
