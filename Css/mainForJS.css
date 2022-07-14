@@ -60,6 +60,13 @@
     background-color: #3b3b3b;
 }
 
+.completed {
+    display: none;
+    font-size: 1.2em;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
 @media (max-width: 450px) {
     .taskBody__delete-button {
         font-size: 0.7em;
@@ -72,14 +79,7 @@
         font-size: 0.9em;
     }
     .taskBody__button {
-        width: 10px;
+        width: 5px;
         margin: 2px;
     }
-}
-
-.completed {
-    display: none;
-    font-size: 1.2em;
-    padding-left: 5px;
-    font-weight: bold;
 }
