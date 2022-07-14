@@ -307,6 +307,7 @@ function menuOpen() {
     let navButton5 = document.getElementById("span5");
 
     nav1.style.width = "250px";
+    nav1.style.transition = "0s";
     nav1.style.boxShadow = "0 5px 10px black";
 
     ham1.style.display = "none";
@@ -333,6 +334,7 @@ function menuClose() {
     let navButton5 = document.getElementById("span5");
 
     nav1.style.width = "60px";
+    nav1.style.transition = "0.5s";
     nav1.style.boxShadow = "none";
 
     ham1.style.display = "flex";
