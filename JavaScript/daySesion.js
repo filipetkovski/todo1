@@ -103,6 +103,11 @@ function finished(text) {
     });
 
     buttonDelete.addEventListener("click", () => {
+        br--;
+        const completed = document.getElementById("completed");
+        if(br === 0 ) {
+            completed.style.display = "none";
+        }
         deleteDone(newDiv);
     });
 

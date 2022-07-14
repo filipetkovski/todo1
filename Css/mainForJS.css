@@ -4,7 +4,7 @@
 }
 
 .taskBody {
-    background-color: #b7b7b7;
+    background-color: lightblue;
     padding: 10px 20px;
     margin-bottom: 5px;
     display: flex;
@@ -15,11 +15,16 @@
 }
 
 .taskBody:hover {
-    background-color: #969696;
+    box-shadow: 1px 1px 5px black;
+}
+
+#form {
+    margin-top: 10px;
 }
 
 .taskBody__text {
-    font-size: 1.3em;
+    color: #3b3b3b;
+    font-size: 1.1em;
     margin-left: 10px;
 }
 

@@ -56,12 +56,11 @@ nav button:last-of-type {
 }
 
 nav button:last-of-type:hover{
-    background-color: firebrick;
+    background-color: lightcoral;
 }
 
 nav button:hover {
-    background-color: #969696;
-    color: white;
+    background-color: lightblue;
 }
 
 .nav-button2, .nav-button4, .nav-button1, .nav-button3, .nav-button5  {
