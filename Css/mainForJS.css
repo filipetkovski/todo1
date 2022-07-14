@@ -5,7 +5,7 @@
 
 .taskBody {
     background-color: #b7b7b7;
-    padding: 15px 20px;
+    padding: 10px 15px;
     margin-bottom: 5px;
     display: flex;
     flex-direction: row;
@@ -15,7 +15,7 @@
 }
 
 .taskBody__text {
-    font-size: 1.1em;
+    font-size: 1.3em;
     margin-left: 10px;
 }
 
@@ -26,8 +26,9 @@
 
 .taskBody__button {
     border: none;
-    border-radius: 10px;
-    width: 10px;margin: 4px 0;
+    border-radius: 50%;
+    width: 15px;
+    margin: 4px 0;
 }
 
 .taskBody__date {
@@ -76,7 +77,7 @@
         margin-right: 5px;
     }
     .taskBody__text {
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
     .taskBody__button {
         width: 5px;
