@@ -10,7 +10,6 @@ window.addEventListener('load', () => {
             let dateTime = new Date();
             let min = dateTime.getMinutes();
             let hours = dateTime.getHours();
-            let year = dateTime.getFullYear();
             let newTask = document.createElement("div");
             let newTime = document.createElement("div");
             let divLeft = document.createElement("div");
@@ -70,7 +69,6 @@ function finished(text) {
     let dateTime = new Date();
     let min = dateTime.getMinutes();
     let hours = dateTime.getHours();
-    let year = dateTime.getFullYear();
     let newTask = document.createElement("div");
     let newTime = document.createElement("div");
     let divLeft = document.createElement("div");
@@ -105,12 +103,7 @@ function finished(text) {
     });
 
     buttonDelete.addEventListener("click", () => {
-        br--;
-        if(br === 0) {
-            const completed = document.getElementById("completed");
-            completed.style.display = "none";
-        }
-         deleteDone(newDiv);
+        deleteDone(newDiv);
     });
 
     divRight.appendChild(newTime);
@@ -143,7 +136,6 @@ function back(text) {
         let dateTime = new Date();
         let min = dateTime.getMinutes();
         let hours = dateTime.getHours();
-        let year = dateTime.getFullYear();
         let newTask = document.createElement("div");
         let newTime = document.createElement("div");
         let divLeft = document.createElement("div");

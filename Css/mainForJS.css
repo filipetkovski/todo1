@@ -1,6 +1,6 @@
 #addTasks {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .taskBody {
@@ -40,7 +40,7 @@
 }
 
 .taskBody__button:hover {
-    background-color: green;
+    background-color: #6fe86f;
 }
 
 .taskBody__date {
