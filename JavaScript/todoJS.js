@@ -19,13 +19,13 @@ window.addEventListener('load', () => {
             let newDiv = document.createElement("div");
             let buttonDelete = document.createElement("button");
             if(min < 10 && hours === 0) {
-                newTime.innerText = "0" + hours + ":" + "0"+ min + " - " + year;
+                newTime.innerText = "0" + hours + ":" + "0"+ min;
             } else if(min < 10) {
-                newTime.innerText = hours + ":" + "0"+ min + " - " + year;
+                newTime.innerText = hours + ":" + "0"+ min;
             } else if(hours === 0) {
-                newTime.innerText = "0" + hours + ":" + min + " - " +  year;
+                newTime.innerText = "0" + hours + ":" + min;
             } else {
-                newTime.innerText = hours + ":" + min + " - " +  year;
+                newTime.innerText = hours + ":" + min;
             }
 
             divRight.classList.add("taskBody__right-side");
@@ -78,14 +78,14 @@ function finished(text) {
     let button = document.createElement("button");
     let newDiv = document.createElement("div");
     let buttonDelete = document.createElement("button");
-    if(min < 10 && hours === 0) {
-        newTime.innerText = "0" + hours + ":" + "0"+ min + " - " + year;
+    if((min < 10) && (hours === 0)) {
+        newTime.innerText = "0" + hours + ":" + "0"+ min;
     } else if(min < 10) {
-        newTime.innerText = hours + ":" + "0"+ min + " - " + year;
+        newTime.innerText = hours + ":" + "0"+ min;
     } else if(hours === 0) {
-        newTime.innerText = "0" + hours + ":" + min + " - " +  year;
+        newTime.innerText = "0" + hours + ":" + min;
     } else {
-        newTime.innerText = hours + ":" + min + " - " +  year;
+        newTime.innerText = hours + ":" + min;
     }
 
     divRight.classList.add("taskBody__right-side");
@@ -147,13 +147,13 @@ function back(text) {
         let newDiv = document.createElement("div");
         let buttonDelete = document.createElement("button");
         if(min < 10 && hours === 0) {
-            newTime.innerText = "0" + hours + ":" + "0"+ min + " - " + year;
+            newTime.innerText = "0" + hours + ":" + "0"+ min;
         } else if(min < 10) {
-            newTime.innerText = hours + ":" + "0"+ min + " - " + year;
+            newTime.innerText = hours + ":" + "0"+ min;
         } else if(hours === 0) {
-            newTime.innerText = "0" + hours + ":" + min + " - " +  year;
+            newTime.innerText = "0" + hours + ":" + min;
         } else {
-            newTime.innerText = hours + ":" + min + " - " +  year;
+            newTime.innerText = hours + ":" + min;
         }
 
         divRight.classList.add("taskBody__right-side");
