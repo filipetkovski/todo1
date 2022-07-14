@@ -7,6 +7,8 @@ const sec4 = document.getElementById("main4");
 function add(n) {
     const addInput = document.getElementById("addInput");
     const addInput1 = document.getElementById("addInput1");
+    const addInput2 = document.getElementById("addInput2");
+    const addInput3 = document.getElementById("addInput3");
 
     if(n === 0) {
         if(addInput.value !== '') {
@@ -39,10 +41,6 @@ function add(n) {
     }
 }
 
-let dateTime = new Date();
-let min = dateTime.getMinutes();
-let hours = dateTime.getHours();
-let year = dateTime.getFullYear();
 let button = document.getElementById("butCas1");
 button.addEventListener("click", doneDay);
 function doneDay() {
@@ -51,12 +49,17 @@ function doneDay() {
 
 //Day
 function addTasktoDay(text) {
+    let dateTime = new Date();
+    let min = dateTime.getMinutes();
+    let hours = dateTime.getHours();
+    let year = dateTime.getFullYear();
     let newDiv = document.createElement("div");
     let newTask = document.createElement("div");
     let newTime = document.createElement("div");
     let divLeft = document.createElement("div");
     const div = document.getElementById("addTasks");
     let button = document.createElement("button");
+
     if(min < 10 && hours === 0) {
         newTime.innerText = "0" + hours + ":" + "0"+ min + " - " + year;
     } else if(min < 10) {
@@ -97,6 +100,10 @@ function addTasktoDay(text) {
 }
 //Important
 function addTasktoImportant(text) {
+    let dateTime = new Date();
+    let min = dateTime.getMinutes();
+    let hours = dateTime.getHours();
+    let year = dateTime.getFullYear();
     let newDiv = document.createElement("div");
     let newTask = document.createElement("div");
     let newTime = document.createElement("div");
@@ -132,6 +139,10 @@ function addTasktoImportant(text) {
 }
 //Planned
 function addTasktoPlanned(text) {
+    let dateTime = new Date();
+    let min = dateTime.getMinutes();
+    let hours = dateTime.getHours();
+    let year = dateTime.getFullYear();
     let newDiv = document.createElement("div");
     let newTask = document.createElement("div");
     let newTime = document.createElement("div");
@@ -167,6 +178,10 @@ function addTasktoPlanned(text) {
 }
 //Tasks
 function addTasktoTaks(text) {
+    let dateTime = new Date();
+    let min = dateTime.getMinutes();
+    let hours = dateTime.getHours();
+    let year = dateTime.getFullYear();
     let newDiv = document.createElement("div");
     let newTask = document.createElement("div");
     let newTime = document.createElement("div");
@@ -272,6 +287,7 @@ function displayTime(){
     } else {
         document.getElementById('hours').innerHTML = hrs;
     }
+
     if(min < 10) {
         document.getElementById('minutes').innerHTML = "0" + min;
     } else {
@@ -294,13 +310,15 @@ function menuOpen() {
     nav1.style.boxShadow = "0 5px 10px black";
 
     ham1.style.display = "none";
-    ham2.style.display = "unset";
+    ham2.style.display = "flex";
+    ham2.style.justifyContent = "center";
+    ham2.style.alignItems = "center";
 
-    navButton1.style.display = "unset";
-    navButton2.style.display = "unset";
-    navButton3.style.display = "unset";
-    navButton4.style.display = "unset";
-    navButton5.style.display = "unset";
+    navButton1.style.fontSize = "1em";
+    navButton2.style.fontSize = "1em";
+    navButton3.style.fontSize = "1em";
+    navButton4.style.fontSize = "1em";
+    navButton5.style.fontSize = "1em";
 
 }
 
@@ -317,13 +335,13 @@ function menuClose() {
     nav1.style.width = "60px";
     nav1.style.boxShadow = "none";
 
-    ham1.style.display = "unset";
+    ham1.style.display = "flex";
     ham2.style.display = "none";
 
-    navButton1.style.display = "none";
-    navButton2.style.display = "none";
-    navButton3.style.display = "none";
-    navButton4.style.display = "none";
-    navButton5.style.display = "none";
+    navButton1.style.fontSize = "0";
+    navButton2.style.fontSize = "0";
+    navButton3.style.fontSize = "0";
+    navButton4.style.fontSize = "0";
+    navButton5.style.fontSize = "0";
 
 }

@@ -12,18 +12,16 @@ nav {
     border-right: 1px solid gray;
 
     background-color: #e7e7e7;
+    transition: 0.5s;
 
     z-index: 100;
 }
 
-#ham2 {
-    display: none;
-}
-
 nav span {
-    display: none;
+    font-size: 0;
     margin-left: 10px;
     pointer-events: none;
+    transition: 0.5s;
 }
 
 .rest-buttons {
@@ -61,6 +59,7 @@ nav button:last-of-type {
 
 #span5 {
     font-size: 0.8em;
+    font-size: 0;
 }
 
 nav button:last-of-type:hover{
