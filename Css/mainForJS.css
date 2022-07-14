@@ -21,13 +21,16 @@
 
 .taskBody__left-side {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
 }
 
 .taskBody__button {
     border: none;
-    border-radius: 50%;
+    border-radius: 7.5px;
     width: 15px;
+    height: 15px;
     margin: 4px 0;
 }
 
@@ -80,7 +83,9 @@
         font-size: 1.1em;
     }
     .taskBody__button {
-        width: 5px;
+        border-radius: 5px;
+        width: 10px;
+        height: 10px;
         margin: 2px;
     }
 }
