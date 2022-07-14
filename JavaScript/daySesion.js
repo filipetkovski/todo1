@@ -105,7 +105,12 @@ function finished(text) {
     });
 
     buttonDelete.addEventListener("click", () => {
-        deleteDone(newDiv);
+        br--;
+        if(br === 0) {
+            const completed = document.getElementById("completed");
+            completed.style.display = "none";
+        }
+         deleteDone(newDiv);
     });
 
     divRight.appendChild(newTime);

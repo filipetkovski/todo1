@@ -82,4 +82,7 @@ section {
     section {
         margin-right: 10px;
     }
+    #addTasks, #addTasks1, #addTasks2, #addTasks3 {
+        margin: 0;
+    }
 }
