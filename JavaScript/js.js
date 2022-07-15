@@ -31,8 +31,14 @@ setInterval(displayTime, 10);
 
 window.addEventListener("load", () => {
     const dark = document.getElementById("darkTheme");
+    const nav= document.getElementById("nav");
+
     dark.addEventListener("mouseenter", () => {
         menuClose();
+    });
+
+    nav.addEventListener("mouseenter", () => {
+        menuOpen();
     });
 });
 
