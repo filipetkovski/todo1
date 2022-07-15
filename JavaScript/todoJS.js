@@ -1,52 +1,27 @@
 
-function navButton1() {
-    const sec1 = document.getElementById("main1");
-    const sec2 = document.getElementById("main2");
-    const sec3 = document.getElementById("main3");
-    const sec4 = document.getElementById("main4");
+function navButton(n) {
+    const sec = [];
+    const nav = [];
 
-    sec1.style.display = "unset";
-    sec2.style.display = "none";
-    sec3.style.display = "none";
-    sec4.style.display = "none";
-    menuClose();
-}
+    sec[0] = document.getElementById("main1");
+    sec[1] = document.getElementById("main2");
+    sec[2] = document.getElementById("main3");
+    sec[3] = document.getElementById("main4");
 
-function navButton2() {
-    const sec1 = document.getElementById("main1");
-    const sec2 = document.getElementById("main2");
-    const sec3 = document.getElementById("main3");
-    const sec4 = document.getElementById("main4");
+    nav[0] = document.getElementById("nav1");
+    nav[1] = document.getElementById("nav2");
+    nav[2] = document.getElementById("nav3");
+    nav[3] = document.getElementById("nav4");
 
-    sec1.style.display = "none";
-    sec2.style.display = "unset";
-    sec3.style.display = "none";
-    sec4.style.display = "none";
-    menuClose();
-}
+    sec[n].style.display = "unset";
+    nav[n].style.backgroundColor = "lightblue";
 
-function navButton3 () {
-    const sec1 = document.getElementById("main1");
-    const sec2 = document.getElementById("main2");
-    const sec3 = document.getElementById("main3");
-    const sec4 = document.getElementById("main4");
+    for(let i=0;i<4;i++) {
+        if(i !== n) {
+            sec[i].style.display = "none";
+            nav[i].style.backgroundColor = "#dadada";
+        }
+    }
 
-    sec1.style.display = "none";
-    sec2.style.display = "none";
-    sec3.style.display = "unset";
-    sec4.style.display = "none";
-    menuClose();
-}
-
-function navButton4 () {
-    const sec1 = document.getElementById("main1");
-    const sec2 = document.getElementById("main2");
-    const sec3 = document.getElementById("main3");
-    const sec4 = document.getElementById("main4");
-
-    sec1.style.display = "none";
-    sec2.style.display = "none";
-    sec3.style.display = "none";
-    sec4.style.display = "unset";
     menuClose();
 }

@@ -47,6 +47,10 @@ nav button {
     background-color: #dadada;
 }
 
+nav button:nth-of-type(1) {
+    background-color: lightblue;
+}
+
 .navImg {
     width: 15px;
 }
@@ -60,16 +64,26 @@ nav button:last-of-type:hover{
 }
 
 nav button:hover {
-    background-color: lightblue;
+    box-shadow: 1px 1px 5px black;
 }
 
 .nav-button2, .nav-button4, .nav-button1, .nav-button3, .nav-button5  {
     padding-left: 22px;
 }
+
 #span5 {
     font-size: 0;
 }
 
+#darkTheme {
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,0.1);
+    top: 61px;
+    left: 250px;
+    right: 0;
+    bottom: 0;
+}
 
 @media  (max-width: 450px) {
     nav button {
@@ -77,6 +91,6 @@ nav button:hover {
     }
 
     nav button:hover {
-        color: black;
+        box-shadow: none;
     }
 }

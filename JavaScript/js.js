@@ -29,6 +29,13 @@ function displayTime(){
 }
 setInterval(displayTime, 10);
 
+window.addEventListener("load", () => {
+    const dark = document.getElementById("darkTheme");
+    dark.addEventListener("mouseenter", () => {
+        menuClose();
+    });
+});
+
 function menuOpen() {
     const nav1= document.getElementById("nav");
     const ham1 = document.getElementById("ham1");
@@ -38,6 +45,9 @@ function menuOpen() {
     let navButton3 = document.getElementById("span3");
     let navButton4 = document.getElementById("span4");
     let navButton5 = document.getElementById("span5");
+
+    const dark = document.getElementById("darkTheme");
+    dark.style.display = "unset";
 
     nav1.style.width = "250px";
     nav1.style.transition = "0s";
@@ -65,6 +75,9 @@ function menuClose() {
     let navButton3 = document.getElementById("span3");
     let navButton4 = document.getElementById("span4");
     let navButton5 = document.getElementById("span5");
+
+    const dark = document.getElementById("darkTheme");
+    dark.style.display = "none";
 
     nav1.style.width = "60px";
     nav1.style.transition = "0.5s";
