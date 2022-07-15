@@ -84,3 +84,10 @@ section {
         margin: 0;
     }
 }
+
+@media (max-width: 450px) {
+    .addTask {
+        padding: 0;
+        font-size: 1.8em;
+    }
+}

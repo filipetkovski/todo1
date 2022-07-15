@@ -67,7 +67,7 @@ nav button:hover {
     box-shadow: 1px 1px 5px black;
 }
 
-.nav-button2, .nav-button4, .nav-button1, .nav-button3, .nav-button5  {
+.nav-button {
     padding-left: 22px;
 }
 
