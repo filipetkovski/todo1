@@ -1,7 +1,7 @@
 section {
     margin-top: 71px;
     margin-right: 510px;
-    margin-left: 70px;
+    margin-bottom: 140px;
     position: relative;
 }
 
@@ -16,19 +16,20 @@ section {
 
 .add {
     width: 100%;
-    background-color: lightcoral;
+    background-color: lightyellow;
     display: flex;
     flex-direction: row;
     align-items: center;
     border-radius: 10px;
-    position:  sticky;
-    bottom: 10px;
+    position:  fixed;
+    bottom: 60px;
+    left: -10px;
     box-shadow: 2px 2px 10px black;
     margin-top: 10px;
 }
 
 .add input:nth-of-type(1) {
-    margin-left: 8.5px;
+    margin-left: 35px;
     width: 50px;
     display: flex;
     justify-content: center;
@@ -36,7 +37,7 @@ section {
 
 .add input:nth-of-type(2) {
     margin: 0 20px 0 0;
-    background-color: lightcoral;
+    background-color: lightyellow;
     width: 100%;
     outline: none;
 }
@@ -47,9 +48,9 @@ section {
 }
 
 .addTask {
-    padding: 5px;
     color: black;
-    background-color: lightcoral;
+    padding: 5px;
+    background-color: lightyellow;
     border: none;
     text-align: left;
     cursor: pointer;
@@ -62,18 +63,16 @@ section {
     padding: 5px 0;
 }
 
-.addTask span {
-    font-size: 1.2em;
-}
 
 .nameSec {
-    background-color: #f1f1f1;
+    background-color: transparent;
     z-index: 50;
     font-size: 1.8em;
-    color: #505050;
+    color: black;
     padding: 20px 10px 10px 10px;
     margin: 0;
     font-weight: bold;
+    user-select: none;
 }
 
 @media (max-width: 1000px) {

@@ -28,8 +28,8 @@
 </div>
 <header>
     <div class="header__left-side">
-        <button onclick="menuOpen()" id="ham1" class="hamburger-button"><img src="Images/hamburger-meny.png" alt="img"/></button>
-        <button onclick="menuClose()" id="ham2" class="hamburger-button"><img src="Images/hamburger-meny.png" alt="img"/></button>
+        <button onclick="menuOpen()" id="ham1" class="hamburger-button"><img draggable="false"  src="Images/hamburger-meny.png" alt="img"/></button>
+        <button onclick="menuClose()" id="ham2" class="hamburger-button"><img draggable="false"  src="Images/hamburger-meny.png" alt="img"/></button>
         <p id="nickname" class="logo-name">ToDo</p>
         <input id="input-serach" type="search" placeholder="Search..."/>
         <img class="img1" src="Images/serach-logo.png" alt="img"/>
@@ -39,14 +39,14 @@
 
 <nav id="nav">
     <div id="darkTheme"></div>
-    <button onclick="navButton(0)" id="nav1" class="nav-button"><img class="navImg" src="Images/sun.png" alt="img"/> <span id="span1">MY DAY</span></button>
-    <button onclick="navButton(1)" id="nav2" class="nav-button"><img class="navImg" src="Images/star.png" alt="img"/> <span id="span2">IMPORTANT</span></button>
-    <button onclick="navButton(2)" id="nav3" class="nav-button"><img class="navImg" src="Images/calendar.png" alt="img"/> <span id="span3">PLANNED</span></button>
-    <button onclick="navButton(3)" id="nav4" class="nav-button"><img class="navImg" src="Images/corect.png" alt="img"/> <span id="span4">TASKS</span></button>
+    <button onclick="navButton(0)" id="nav1" class="nav-button"><img draggable="false" class="navImg" src="Images/sun.png" alt="img"/> MY DAY</button>
+    <button onclick="navButton(1)" id="nav2" class="nav-button"><img draggable="false"  class="navImg" src="Images/star.png" alt="img"/> IMPORTANT</button>
+    <button onclick="navButton(2)" id="nav3" class="nav-button"><img draggable="false"  class="navImg" src="Images/calendar.png" alt="img"/> PLANNED</button>
+    <button onclick="navButton(3)" id="nav4" class="nav-button"><img draggable="false"  class="navImg" src="Images/corect.png" alt="img"/> TASKS</button>
     <div class="rest-buttons">
 
     </div>
-    <button class="nav-button"><img class="navImg" src="Images/plus.png" alt="img"/> <span id="span5">NEW</span></button>
+    <button class="nav-button" id="nav5"><img draggable="false"  class="navImg" src="Images/plus.png" alt="img"/> NEW</button>
 </nav>
 
 <section id="main">

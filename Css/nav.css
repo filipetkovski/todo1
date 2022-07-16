@@ -4,14 +4,15 @@ nav {
     top: 71px;
     left: 0;
     bottom: 0;
-    width: 60px;
+    width: 0;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     border-right: 1px solid gray;
+    user-select: none;
 
-    background-color: #e7e7e7;
+    background-color: #f1f1f1;
 
     z-index: 100;
 }
@@ -24,7 +25,6 @@ nav span {
 
 .rest-buttons {
     margin-top: 15px;
-    border-top: 1px dotted gray;
     width: 95%;
     height: 5%;
 }
@@ -33,18 +33,18 @@ nav button {
     padding: 7px 20px;
     font-size: 1em;
     border: 0;
-    width: 98%;
+    width: 95%;
     text-align: left;
     cursor: pointer;
     transition: 0.5s;
     border-radius: 10px;
     height: 45px;
-    display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 5px;
     color: black;
-    background-color: #dadada;
+    background-color: #f1f1f1;
+    display: none;
 }
 
 nav button:nth-of-type(1) {
@@ -53,6 +53,7 @@ nav button:nth-of-type(1) {
 
 .navImg {
     width: 15px;
+    margin-right: 10px;
 }
 
 nav button:last-of-type {
@@ -60,7 +61,7 @@ nav button:last-of-type {
 }
 
 nav button:last-of-type:hover{
-    background-color: lightcoral;
+    background-color: lightyellow;
 }
 
 nav button:hover {
@@ -71,14 +72,10 @@ nav button:hover {
     padding-left: 22px;
 }
 
-#span5 {
-    font-size: 0;
-}
-
 #darkTheme {
     display: none;
     position: fixed;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.2);
     top: 61px;
     left: 250px;
     right: 0;

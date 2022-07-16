@@ -37,8 +37,15 @@ window.addEventListener("load", () => {
         menuClose();
     });
 
+    dark.addEventListener("click", () => {
+        menuClose();
+    });
+
     nav.addEventListener("mouseenter", () => {
-        menuOpen();
+        let wid = outerWidth;
+        if(wid === 450) {
+            menuOpen();
+        }
     });
 });
 
@@ -48,11 +55,11 @@ function menuOpen() {
     const ham2 = document.getElementById("ham2");
     let navButton = [];
 
-    navButton[0] = document.getElementById("span1");
-    navButton[1] = document.getElementById("span2");
-    navButton[2] = document.getElementById("span3");
-    navButton[3] = document.getElementById("span4");
-    navButton[4] = document.getElementById("span5");
+    navButton[0] = document.getElementById("nav1");
+    navButton[1] = document.getElementById("nav2");
+    navButton[2] = document.getElementById("nav3");
+    navButton[3] = document.getElementById("nav4");
+    navButton[4] = document.getElementById("nav5");
 
     const dark = document.getElementById("darkTheme");
     dark.style.display = "unset";
@@ -68,6 +75,7 @@ function menuOpen() {
 
     for(let i=0;i<5;i++) {
         navButton[i].style.fontSize = "1em";
+        navButton[i].style.display = "flex";
     }
 }
 
@@ -77,16 +85,16 @@ function menuClose() {
     let ham2 = document.getElementById("ham2");
     let navButton = [];
 
-    navButton[0] = document.getElementById("span1");
-    navButton[1] = document.getElementById("span2");
-    navButton[2] = document.getElementById("span3");
-    navButton[3] = document.getElementById("span4");
-    navButton[4] = document.getElementById("span5");
+    navButton[0] = document.getElementById("nav1");
+    navButton[1] = document.getElementById("nav2");
+    navButton[2] = document.getElementById("nav3");
+    navButton[3] = document.getElementById("nav4");
+    navButton[4] = document.getElementById("nav5");
 
     const dark = document.getElementById("darkTheme");
     dark.style.display = "none";
 
-    nav1.style.width = "60px";
+    nav1.style.width = "0";
     nav1.style.transition = "0.5s";
     nav1.style.boxShadow = "none";
 
@@ -95,6 +103,7 @@ function menuClose() {
 
     for(let i=0;i<5;i++) {
         navButton[i].style.fontSize = "0";
+        navButton[i].style.display = "none";
     }
 
 }

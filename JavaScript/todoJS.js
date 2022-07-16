@@ -19,7 +19,7 @@ function navButton(n) {
     for(let i=0;i<4;i++) {
         if(i !== n) {
             sec[i].style.display = "none";
-            nav[i].style.backgroundColor = "#dadada";
+            nav[i].style.backgroundColor = "#f1f1f1";
         }
     }
 
