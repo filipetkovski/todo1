@@ -25,3 +25,43 @@ function navButton(n) {
 
     menuClose();
 }
+
+
+window.addEventListener("load", () => {
+   let form = [];
+   let width = outerWidth;
+
+   if(width < 451) {
+       form[0] = document.getElementById("form");
+       form[1] = document.getElementById("form1");
+       form[2] = document.getElementById("form2");
+       form[3] = document.getElementById("form3");
+       
+       form[0].addEventListener("click", () => {
+           form[0].style.bottom = "300px";
+       });
+       form[1].addEventListener("click", () => {
+           form[1].style.bottom = "300px";
+       });
+       form[2].addEventListener("click", () => {
+           form[2].style.bottom = "300px";
+       });
+       form[3].addEventListener("click", () => {
+           form[4].style.bottom = "300px";
+       });
+
+       form[0].addEventListener("submit", () => {
+           form[0].style.bottom = "60px";
+       });
+       form[1].addEventListener("submit", () => {
+           form[1].style.bottom = "60px";
+       });
+       form[2].addEventListener("submit", () => {
+           form[2].style.bottom = "60px";
+       });
+       form[3].addEventListener("submit", () => {
+           form[3].style.bottom = "60px";
+       });
+   }
+
+});
